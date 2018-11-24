@@ -1,3 +1,36 @@
-<h1>
-  {{title}}
-</h1>
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">{{title}}</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active">
+          <a href="">
+            <i class="glyphicon glyphicon-home"></i>
+          </a>
+        </li>
+        <li>
+          <a routerLink="/write">schrijven</a>
+        </li>
+        <li>
+          <a routerLink="/read">lezen</a>
+        </li>
+        <li>
+          <a routerLink="/calculate">rekenen</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<br/>
+<br/>
+<br/>
+
+<router-outlet></router-outlet>

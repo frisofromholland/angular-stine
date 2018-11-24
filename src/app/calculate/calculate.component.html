@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <label class="josefin24">{{question.question}}</label>
+    </div>
+    <div class="col-sm-4">
+      <div class="input-group">
+        <span class="input-group-addon">
+          <i class="glyphicon glyphicon-pencil"></i>
+        </span>
+        <input class="josefin24 form-control" [(ngModel)]="answer.value " placeholder="Schrijf hier " />
+      </div>
+      <button class="josefin24 btn-default form-control" (click)="verify(answer);newQuestion();answer.value=''">
+        <p>klik!</p>
+      </button>
+    </div>
+    <messages></messages>
+  </div>
+</div>
